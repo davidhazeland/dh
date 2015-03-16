@@ -1,5 +1,5 @@
-.is-collapsed-mobile {
-	@include mq(small) {
+.is-collapsed-desktop {
+	@include mq(large) {
 		visibility: collapse;
 		height: 0;
 		padding: 0;
