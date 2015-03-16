@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>dh</title>
+    <title>David Hazeland</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -25,15 +25,59 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-      </ul>
+    <header ng-controller="headerCtrl">
+      <div class="container">
+        <a href="#" id="logo" class="logo"></a>
+        <span ng-click="toggleNav()" class="list-icon right"></span>
+      </div>
+      <mobile-nav></mobile-nav>
+    </header>
+
+    <div id="content">
+      <section id="cover" ng-controller="infoCtrl">
+        <img src="{{ info.avatar }}" class="avatar">
+        <p class="name">{{ info.name }}</p>
+        <p class="job">{{ info.job }}</p>
+      </section>
+      <section id="skill" ng-controller="skillCtrl">
+        <h2 class="heading heading--skill">SKILL</h2>
+        <skill-chart class="chart"></skill-chart>
+        <coding-chart class="chart"></coding-chart>
+        <js-chart class="chart"></js-chart>
+      </section>
+      <section id="project" ng-controller="projectCtrl">
+        <h2 class="heading heading--project">PROJECT</h2>
+        <ul class="showcase">
+          <li class="showcase__item" ng-repeat="project in projects">
+            <a href="{{project.link}}"><img class="showcase__item" src="{{project.image}}"></a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" ng-controller="contactCtrl">
+        <h2 class="heading heading--contact">CONTACT</h2>
+        <form class="contact-form">
+          <input class="contact-form__textbox" type="text" placeholder="Name"/>
+          <input class="contact-form__textbox" type="email" placeholder="Email"/>
+          <textarea class="contact-form__textarea" placeholder="Message"></textarea>
+          <button class="contact-form__button" ng-click="sendMessage($event)">SEND</button>
+        </form>
+      </section>
     </div>
+
+    <footer ng-controller="infoCtrl">
+      <ul class="social">
+        <li class="social__item">
+          <a href="{{info.facebook}}" class="social__item--facebook"></a>
+        </li>
+        <li class="social__item">
+          <a href="{{info.twitter}}" class="social__item--twitter"></a>
+        </li>
+        <li class="social__item">
+          <a href="{{info.linkedin}}" class="social__item--linkedin"></a>
+        </li>
+      </ul>
+      <p>Copyright 2015 by <span>David Hazeland<span></p>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -52,7 +96,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
         <!-- endbuild -->
 </body>
 </html>

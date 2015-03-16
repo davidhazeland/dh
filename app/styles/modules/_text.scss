@@ -1,0 +1,43 @@
+.name {
+	color: $grass--shade;
+	font-family: $font-family--secondary;
+	font-size: em(24px);
+	line-height: em(36px, 24px);
+}
+
+.job {
+	color: $dark-gray--tint;
+	font-size: em(16px);
+	line-height: em(24px, 16px);
+}
+
+.heading {
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--normal;
+	font-size: em(21px);
+	line-height: em(42px, 21px);
+	text-align: center;
+	margin: 0;
+	padding-top: 15px;
+	&:after {
+		content: '';
+		height: 4px;
+		width: 40px;
+		display: block;
+		position: relative;
+		left: 50%;
+		margin-left: -20px;
+	}
+}
+
+.heading--skill {
+	@include heading-color($white, $sunflower--tint);
+}
+
+.heading--project {
+	@include heading-color($dark-gray--tint, $grass--tint);	
+}
+
+.heading--contact {
+	@include heading-color($white, $pink-rose--tint);	
+}

@@ -1,0 +1,17 @@
+[
+	{
+		"name": "doko",
+		"image": "images/doko.jpg",
+		"link": "http://doko.vn"
+	},
+	{
+		"name": "acolart",
+		"image": "images/acolart.jpg",
+		"link": "http://acolart.com"	
+	},
+	{
+		"name": "mimeter",
+		"image": "images/mimeter.jpg",
+		"link": "#"
+	}
+]
