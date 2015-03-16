@@ -1,0 +1,22 @@
+.nav {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+.nav__item {
+	color: $white;
+	display: block;
+	font-size: em(18px);
+	line-height: em(36px, 18px);
+	padding-left: 5%;
+	@include is-pointer();
+	&:active {
+		background-color: $dark-gray--tint;
+	}
+}
+
+.nav__item--current {
+	background-color: $dark-gray--shade;
+}
+

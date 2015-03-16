@@ -1,0 +1,20 @@
+.logo {
+	@include img-replace("logo.svg", 48px, 36px, inline-block);
+}
+
+.list-icon {
+	@include img-replace("list-menu.svg", 48px, 24px, inline-block);
+	@include is-pointer();
+}
+
+.social__item--facebook {
+	@include img-replace("fb.svg", 48px, 48px, inline-block);
+}
+
+.social__item--twitter {
+	@include img-replace("tw.svg", 48px, 48px, inline-block);
+}
+
+.social__item--linkedin {
+	@include img-replace("in.svg", 48px, 48px, inline-block);
+}
