@@ -5,7 +5,7 @@ define([], function(){
 		};
 
 		return {
-			templateUrl: 'scripts/views/mobile-nav.html',
+			templateUrl: 'scripts/views/navigation.html',
 			restrict: 'E',
 			link: linkFn
 		};
