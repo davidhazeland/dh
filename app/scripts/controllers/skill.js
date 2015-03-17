@@ -1,5 +1,9 @@
-define(['chartjs'], function(Chart){
-	var controller = function($scope){
+'use strict';
+
+/* global define */
+
+define([], function(){
+	var controller = function(){
 
 	};
 

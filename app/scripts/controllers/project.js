@@ -1,3 +1,7 @@
+'use strict';
+
+/* global define */
+
 define([], function(){
 	var controller = function($scope, $http){
 		var url = 'data/projects.json';

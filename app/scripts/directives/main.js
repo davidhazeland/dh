@@ -1,5 +1,10 @@
-define(['app', './navigation', './skill-chart', './coding-chart', './js-chart'], 
-function(app, navigation, skillChart, codingChart, jsChart){
+'use strict';
+
+/* global define */
+
+define(['app', './base', './navigation', './skill-chart', './coding-chart', './js-chart'], 
+function(app, base, navigation, skillChart, codingChart, jsChart){
+	app.directive('app', base);
 	app.directive('navigation', navigation);
 	app.directive('skillChart', skillChart);
 	app.directive('codingChart', codingChart);

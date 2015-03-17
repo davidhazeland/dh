@@ -1,3 +1,7 @@
+'use strict';
+
+/* global define */
+
 define(['app', './header', './info', './skill', './project', './contact'], 
 function(app, headerCtrl, infoCtrl, skillCtrl, projectCtrl, contactCtrl){
 	app.controller('headerCtrl', headerCtrl);

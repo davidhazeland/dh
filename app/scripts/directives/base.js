@@ -9,7 +9,7 @@ define([], function(){
 		};
 
 		return {
-			templateUrl: 'scripts/views/navigation.html',
+			templateUrl: 'scripts/views/base.html',
 			restrict: 'E',
 			link: linkFn
 		};
