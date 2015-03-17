@@ -1,8 +1,11 @@
 .chart {
 	@include mq(large){
+		width: 31%;
+		margin-right: 3%;
 		display: inline-block;
-		margin: 2%;
-		width: 25%;
+		&:last-child {
+			margin-right: 0;
+		}
 	}	
 	canvas {
 		width: 90% !important;
@@ -35,7 +38,7 @@
 	}
 	h3 {
 		color: $white;
-		font-size: em(16px);
+		font-size: em(14px);
 		font-weight: $font-weight--normal;
 	}
 }

@@ -13,12 +13,21 @@
 
 .social__item--facebook {
 	@include img-replace("fb.svg", 48px, 48px, inline-block);
+	@include mq(large) {
+		@include img-replace("fb.svg", 42px, 42px, inline-block);
+	}
 }
 
 .social__item--twitter {
 	@include img-replace("tw.svg", 48px, 48px, inline-block);
+	@include mq(large) {
+		@include img-replace("tw.svg", 42px, 42px, inline-block);
+	}
 }
 
 .social__item--linkedin {
 	@include img-replace("in.svg", 48px, 48px, inline-block);
+	@include mq(large) {
+		@include img-replace("in.svg", 42px, 42px, inline-block);
+	}
 }

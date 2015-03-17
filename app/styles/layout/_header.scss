@@ -8,9 +8,9 @@ header {
 			margin-top: 12px;
 		}
 	}
+	@extend .cover;
 	@include mq(large) {
 		height: 300px;
-		@extend .cover;
 	}
 }
 

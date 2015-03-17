@@ -15,7 +15,8 @@
 	font-size: em(16px);
 	line-height: em(24px, 16px);
 	@include mq(large) {
-		font-weight: $font-weight--bold;
+		font-size: em(18px);
+		line-height: em(27px, 18px);
 	}
 }
 
@@ -33,8 +34,8 @@
 .heading {
 	font-family: $font-family--secondary;
 	font-weight: $font-weight--normal;
-	font-size: em(21px);
-	line-height: em(42px, 21px);
+	font-size: em(24px);
+	line-height: em(48px, 24px);
 	text-align: center;
 	margin: 0;
 	padding-top: 15px;
@@ -46,6 +47,10 @@
 		position: relative;
 		left: 50%;
 		margin-left: -20px;
+	}
+	@include mq(large) {
+		font-size: em(24px);
+		line-height: em(48px, 24px);
 	}
 }
 
@@ -59,4 +64,24 @@
 
 .heading--contact {
 	@include heading-color($white, $pink-rose--tint);	
+}
+
+.sub-heading {
+	font-weight: $font-weight--normal;
+	font-size: em(16px);
+	line-height: em(36px, 16px);
+	padding-top: 10px;
+	text-align: center;
+}
+
+.sub-heading--skill {
+	color: $white;
+}
+
+.sub-heading--project {
+	
+}
+
+.sub-heading--contact {
+	color: $white;	
 }
