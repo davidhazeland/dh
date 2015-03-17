@@ -1,27 +1,25 @@
 .is-collapsed-desktop {
 	@include mq(large) {
-		visibility: collapse;
-		height: 0;
-		padding: 0;
-		margin: 0;
-		line-height: 0;
+		@include is-collapsed;
+	}
+}
+
+.is-expanded-desktop {
+	@include mq(small) {
+		@include is-collapsed;
+	}
+
+	@include mq(medium) {
+		@include is-collapsed;
 	}
 }
 
 .is-expanded-mobile {
 	@include mq(medium) {
-		visibility: collapse;
-		height: 0;
-		padding: 0;
-		margin: 0;
-		line-height: 0;
+		@include is-collapsed;
 	}
 
 	@include mq(large) {
-		visibility: collapse;
-		height: 0;
-		padding: 0;
-		margin: 0;
-		line-height: 0;
+		@include is-collapsed;
 	}
 }

@@ -9,4 +9,19 @@
 	p {
 		margin: em(10px) 0;
 	}
+	@include mq(large) {
+		width: 90%;
+		margin: -75px auto 0;
+		text-align: left;
+		img {
+			width: 215px;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+	&::after {
+		content: '';
+		clear: both;
+		display: block;
+	}
 }

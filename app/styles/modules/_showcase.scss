@@ -8,4 +8,15 @@
 			width: 100%;
 		}
 	}
+	@include mq(large) {
+		text-align: center;
+		&__item {
+			display: inline-block;
+			width: 30%;
+			margin: 1%;
+			img {
+				width: 100%;
+			}
+		}
+	}
 }

@@ -1,5 +1,9 @@
 .logo {
 	@include img-replace("logo.svg", 48px, 36px, inline-block);
+	@include mq(large) {
+		@include img-replace("logo.svg", 64px, 48px, inline-block);
+		float: left;
+	}
 }
 
 .list-icon {

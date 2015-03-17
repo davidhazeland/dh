@@ -1,9 +1,15 @@
 .chart {
+	@include mq(large){
+		display: inline-block;
+		margin: 2%;
+		width: 25%;
+	}	
 	canvas {
 		width: 90% !important;
 		height: 300px;
 		max-width: 400px;
 		margin-top: 30px;
+		
 	}
 	ul {
 		list-style: none;

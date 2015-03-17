@@ -39,4 +39,18 @@
 			background-color: lighten($pink-rose--tint, 3%);
 		}
 	}
+
+	@include mq(large) {
+		width: 50%;
+		overflow: hidden;
+
+		&__textbox,
+		&__textarea {
+		}
+
+		&__button {
+			width: 120px;
+			float: right;
+		}
+	}
 }

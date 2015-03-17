@@ -3,12 +3,31 @@
 	font-family: $font-family--secondary;
 	font-size: em(24px);
 	line-height: em(36px, 24px);
+	@include mq(large) {
+		font-size: em(32px);
+		line-height: em(48px, 32px);
+		color: $white;
+	}
 }
 
 .job {
 	color: $dark-gray--tint;
 	font-size: em(16px);
 	line-height: em(24px, 16px);
+	@include mq(large) {
+		font-weight: $font-weight--bold;
+	}
+}
+
+.quote {
+	float: left;
+	text-align: center;
+	width: 100%;
+	font-size: em(32px);
+	line-height: em(48px, 32px);
+	color: $grass--shade;
+	margin: 50px 0;
+	display: none;
 }
 
 .heading {

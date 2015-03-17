@@ -7,6 +7,10 @@ header {
 		span {
 			margin-top: 12px;
 		}
-	}	
+	}
+	@include mq(large) {
+		height: 300px;
+		@extend .cover;
+	}
 }
 

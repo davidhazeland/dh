@@ -11,4 +11,14 @@ footer {
 			font-weight: $font-weight--bold;
 		}
 	}
+	@include mq(large) {
+		height: 100px;
+		ul {
+			float: right;
+		}
+		p {
+			float: left;
+			margin-top: 40px;
+		}
+	}
 }
