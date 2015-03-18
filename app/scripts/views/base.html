@@ -14,9 +14,12 @@
     <p class="job">{{ info.job }}</p>
     <q class="is-expanded-desktop quote">{{ info.quote }}</q>
   </section>
+  <section id="workspace" ng-controller="workspaceCtrl">
+    <workspace></workspace>
+  </section>
   <section id="skill" ng-controller="skillCtrl">
     <h2 class="heading heading--skill">SKILL</h2>
-    <p class="sub-heading sub-heading--skill">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <p class="sub-heading sub-heading--skill">A selection of things I'am learning and working.</p>
     <div class="container">
       <skill-chart class="chart"></skill-chart>
       <coding-chart class="chart"></coding-chart>
