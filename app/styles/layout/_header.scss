@@ -10,7 +10,7 @@ header {
 	}
 	@extend .cover;
 	@include mq(large) {
-		height: 300px;
+		height: 350px;
 	}
 }
 
