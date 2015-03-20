@@ -14,7 +14,8 @@
     <p class="job">{{ info.job }}</p>
     <q class="is-expanded-desktop quote">{{ info.quote }}</q>
   </section>
-  <section id="workspace" ng-controller="workspaceCtrl">
+  <section id="workspace" ng-controller="workspaceCtrl" class="is-expanded-desktop">
+  	<h2 class="heading heading--project">GALLERY</h2>
     <workspace items="items"></workspace>
   </section>
   <section id="skill" ng-controller="skillCtrl">
@@ -36,14 +37,16 @@
     </ul>
   </section>
   <section id="contact" ng-controller="contactCtrl">
-    <h2 class="heading heading--contact">CONTACT</h2>
-    <p class="sub-heading sub-heading--contact">Write in a few words whatever you want to tell me.</p>
-    <form class="contact-form">
-      <input class="contact-form__textbox" type="text" placeholder="Name"/>
-      <input class="contact-form__textbox" type="email" placeholder="Email"/>
-      <textarea class="contact-form__textarea" placeholder="Message"></textarea>
-      <button class="contact-form__button" ng-click="sendMessage($event)">SEND</button>
-    </form>
+  	<div class="container">
+  		<h2 class="heading heading--contact">CONTACT</h2>
+	    <p class="sub-heading sub-heading--contact">Write in a few words whatever you want to tell me.</p>
+	    <form class="contact-form">
+	      <input class="contact-form__textbox" type="text" placeholder="Name"/>
+	      <input class="contact-form__textbox" type="email" placeholder="Email"/>
+	      <textarea class="contact-form__textarea" placeholder="Message"></textarea>
+	      <button class="contact-form__button" ng-click="sendMessage($event)">SEND</button>
+	    </form>
+  	</div>
   </section>
 </div>
 
