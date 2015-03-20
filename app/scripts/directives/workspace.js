@@ -7,17 +7,17 @@ define(['jquery', 'owlCarousel'], function($){
 		
 		var linkFn = function(scope, element, attrs) {
 			function initCarousel() {
-				if (scope.items && scope.items.length > 0) {
-					var owl = element.find('.owl-carousel');
-					$(owl).owlCarousel({
-						autoPlay: 3000, //Set AutoPlay to 3 seconds
-						items: 3
-					});	
-				}
+				var owl = element.find('.owl-carousel');
+				$(owl).owlCarousel({
+					autoPlay: 3000, //Set AutoPlay to 3 seconds
+					items: 3
+				});	
 			}
 
 			scope.$watch("items", function(value) {
-      			initCarousel();
+				if (scope.items && scope.items.length > 0) {
+					initCarousel();
+				}
     		});
 		};
 
