@@ -19,22 +19,26 @@
     <workspace items="items"></workspace>
   </section>
   <section id="skill" ng-controller="skillCtrl">
-    <h2 class="heading heading--skill">SKILL</h2>
-    <p class="sub-heading sub-heading--skill">A selection of things I'am learning and working</p>
     <div class="container">
-      <skill-chart class="chart"></skill-chart>
-      <coding-chart class="chart"></coding-chart>
-      <js-chart class="chart"></js-chart>
+      <h2 class="heading heading--skill">SKILL</h2>
+      <p class="sub-heading sub-heading--skill">A selection of things I'am learning and working</p>
+      <div class="container">
+        <skill-chart class="chart"></skill-chart>
+        <coding-chart class="chart"></coding-chart>
+        <js-chart class="chart"></js-chart>
+      </div>
     </div>
   </section>
   <section id="project" ng-controller="projectCtrl">
-    <h2 class="heading heading--project">PROJECT</h2>
-    <p class="sub-heading sub-heading--project">A bunch of things that I've done so far</p>
-    <ul class="showcase">
-      <li class="showcase__item" ng-repeat="project in projects">
-        <a href="{{project.link}}"><img class="showcase__item" src="{{project.image}}"></a>
-      </li>
-    </ul>
+    <div class="container">
+      <h2 class="heading heading--project">PROJECT</h2>
+      <p class="sub-heading sub-heading--project">A bunch of things that I've done so far</p>
+      <ul class="showcase">
+        <li class="showcase__item" ng-repeat="project in projects">
+          <a href="{{project.link}}"><img class="showcase__item" src="{{project.image}}"></a>
+        </li>
+      </ul>
+    </div>
   </section>
   <section id="contact" ng-controller="contactCtrl">
   	<div class="container">
