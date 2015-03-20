@@ -1,28 +1,40 @@
 .chart {
+	@include mq(large){
+		width: 31%;
+		margin-right: 3%;
+		display: inline-block;
+		&:last-child {
+			margin-right: 0;
+		}
+	}	
 	canvas {
-		width: 90% !important;
+		width: 100% !important;
 		height: 300px;
+		max-width: 400px;
 		margin-top: 30px;
+		
 	}
 	ul {
 		list-style: none;
-		width: 90%;
 		padding: 0;
 		margin: 20px auto;
-		display: flex;
 		li {
-			flex-grow: 1;
+			display: inline-block;
 			line-height: 24px;
 			color: $white;
 			font-size: em(12px);
 			text-align: center;
+			margin-right: 5px;
+			@include mq(large) {
+				margin-right: 15px;
+			}
 			span{
 				width: 16px;
 				height: 16px;
 				display: inline-block;
 				border: 2px solid #fff;
 				border-radius: 50%;
-				margin-right: 2px;
+				margin-right: 5px;
 				vertical-align: text-bottom;
 			}
 		}

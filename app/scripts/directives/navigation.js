@@ -1,11 +1,15 @@
+'use strict';
+
+/* global define */
+
 define([], function(){
 	var directives = function(){
-		var linkFn = function(scope, element, attrs) {
+		var linkFn = function() {
 			
 		};
 
 		return {
-			templateUrl: 'scripts/views/mobile-nav.html',
+			templateUrl: 'scripts/views/navigation.html',
 			restrict: 'E',
 			link: linkFn
 		};

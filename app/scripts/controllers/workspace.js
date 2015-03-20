@@ -4,11 +4,12 @@
 
 define([], function(){
 	var controller = function($scope, $http){
-		var url = 'data/projects.json';
+		var url = 'data/workspace.json';
+		
 		$http
 			.get(url)
 			.success(function(response){
-				$scope.projects = response;
+				$scope.items = response;
 			});
 	};
 

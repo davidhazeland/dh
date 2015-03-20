@@ -2,6 +2,7 @@
 	"avatar": "images/avatar.jpg",
 	"name": "David Hazeland",
 	"job": "Freelance Front-end Web Developer",
+	"quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 	"email": "davidhazeland@gmail.com",
 	"facebook": "https://facebook.com/davidhazeland",
 	"twitter": "https://twitter.com/davidhazeland",
