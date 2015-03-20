@@ -5,7 +5,7 @@
 define(['jquery', 'owlCarousel'], function($){
 	var directives = function(){
 		
-		var linkFn = function(scope, element, attrs) {
+		var linkFn = function(scope, element) {
 			function initCarousel() {
 				var owl = element.find('.owl-carousel');
 				$(owl).owlCarousel({
@@ -14,7 +14,7 @@ define(['jquery', 'owlCarousel'], function($){
 				});	
 			}
 
-			scope.$watch("items", function(value) {
+			scope.$watch('items', function() {
 				if (scope.items && scope.items.length > 0) {
 					initCarousel();
 				}
