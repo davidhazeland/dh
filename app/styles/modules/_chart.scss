@@ -24,7 +24,10 @@
 			color: $white;
 			font-size: em(12px);
 			text-align: center;
-			margin-right: 15px;
+			margin-right: 5px;
+			@include mq(large) {
+				margin-right: 15px;
+			}
 			span{
 				width: 16px;
 				height: 16px;

@@ -9,7 +9,7 @@
 
 .cover {
 	@include mq(large) {
-		background: url(#{$path--rel}/space.jpg) no-repeat;
+		background: url(#{$path--rel}/cover.jpg) no-repeat;
 		background-size: cover;	
 		background-position: 50%;
 	}
