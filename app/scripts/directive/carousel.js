@@ -2,10 +2,10 @@
 
 /* global define */
 
-define(['jquery', 'owlCarousel'], function($){
-	var directives = function(){
+define(['app', 'jquery', 'owlCarousel'], function(app, $){
+	var directive = function(){
 		
-		var linkFn = function(scope, element, attrs) {
+		var linkFn = function(scope, element) {
 			function initCarousel() {
 				var owl = element.find('.owl-carousel');
 				$(owl).owlCarousel({
@@ -14,7 +14,7 @@ define(['jquery', 'owlCarousel'], function($){
 				});	
 			}
 
-			scope.$watch("items", function(value) {
+			scope.$watch('items', function() {
 				if (scope.items && scope.items.length > 0) {
 					initCarousel();
 				}
@@ -23,7 +23,7 @@ define(['jquery', 'owlCarousel'], function($){
 
 		return {
 			restrict: 'E',
-			templateUrl: 'scripts/views/workspace.html',
+			templateUrl: 'scripts/view/carousel.html',
 			scope: {
 				items: '=items'
 			},
@@ -31,5 +31,7 @@ define(['jquery', 'owlCarousel'], function($){
 		};
 	};
 
-	return directives;
+	app.directive('carousel', directive);
+
+	return directive;
 });

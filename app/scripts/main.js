@@ -22,6 +22,6 @@ require.config({
     }
 });
 
-require(['angular', 'controllers/main', 'directives/main'], function(angular) {
+require(['angular', 'controller/index', 'directive/index'], function(angular) {
  	angular.bootstrap(document, ['portfolio']);
 });
