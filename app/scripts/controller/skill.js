@@ -11,7 +11,7 @@ define(['app', 'factory/skill'], function(app){
 			});
 	}];
 
-	app.controller('skillCtrl', controller);
+	app.controller('SkillCtrl', controller);
 
 	return controller;
 });

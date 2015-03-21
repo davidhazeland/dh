@@ -11,7 +11,7 @@ define(['app', 'factory/gallery'], function(app){
 			});
 	}];
 
-	app.controller('galleryCtrl', controller);
+	app.controller('GalleryCtrl', controller);
 
 	return controller;
 });

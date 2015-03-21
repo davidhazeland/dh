@@ -4,13 +4,14 @@
 
 define(['app', 'factory/info'], function(app){
 	var controller = ['$scope', 'Info', function ($scope, Info) {
-		Info.get()
+		Info
+			.get()
 			.success(function(response){
 		        $scope.info = response;
 			});
     }];
 
-    app.controller('infoCtrl', controller);
+    app.controller('InfoCtrl', controller);
 
     return app;
 });

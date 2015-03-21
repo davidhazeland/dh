@@ -11,7 +11,7 @@ define(['app'], function(app){
 		};
 	};
 
-	app.controller('headerCtrl', controller);
+	app.controller('HeaderCtrl', controller);
 
 	return controller;
 });

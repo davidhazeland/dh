@@ -3,13 +3,11 @@
 /* global define */
 
 define(['app'], function(app){
-	var controller = function($scope){
-		$scope.sendMessage = function(){
-			// e.preventDefault();
-		};
+	var controller = function(){
+		
 	};
 
-	app.controller('contactFormCtrl', controller);
+	app.controller('ContactFormCtrl', controller);
 
 	return controller;
 });
