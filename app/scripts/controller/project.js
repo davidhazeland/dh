@@ -11,7 +11,7 @@ define(['app', 'factory/project'], function(app){
 			});
 	}];
 
-	app.controller('projectCtrl', controller);
+	app.controller('ProjectCtrl', controller);
 
 	return controller;
 });
