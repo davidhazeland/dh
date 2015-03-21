@@ -2,7 +2,7 @@
 
 /* global define */
 
-define([], function(){
+define(['app'], function(app){
 	var controller = function($scope){
 		$scope.isCollapsedNav = false;
 
@@ -10,6 +10,8 @@ define([], function(){
 			this.isCollapsedNav = !this.isCollapsedNav;
 		};
 	};
+
+	app.controller('headerCtrl', controller);
 
 	return controller;
 });

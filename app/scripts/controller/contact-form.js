@@ -2,12 +2,14 @@
 
 /* global define */
 
-define([], function(){
+define(['app'], function(app){
 	var controller = function($scope){
 		$scope.sendMessage = function(e){
-			e.preventDefault();
+			// e.preventDefault();
 		};
 	};
+
+	app.controller('contactFormCtrl', controller);
 
 	return controller;
 });

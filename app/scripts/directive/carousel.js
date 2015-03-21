@@ -2,8 +2,8 @@
 
 /* global define */
 
-define(['jquery', 'owlCarousel'], function($){
-	var directives = function(){
+define(['app', 'jquery', 'owlCarousel'], function(app, $){
+	var directive = function(){
 		
 		var linkFn = function(scope, element) {
 			function initCarousel() {
@@ -23,7 +23,7 @@ define(['jquery', 'owlCarousel'], function($){
 
 		return {
 			restrict: 'E',
-			templateUrl: 'scripts/views/workspace.html',
+			templateUrl: 'scripts/view/carousel.html',
 			scope: {
 				items: '=items'
 			},
@@ -31,5 +31,7 @@ define(['jquery', 'owlCarousel'], function($){
 		};
 	};
 
-	return directives;
+	app.directive('carousel', directive);
+
+	return directive;
 });
