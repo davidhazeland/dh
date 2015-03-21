@@ -4,7 +4,7 @@
 
 define(['app'], function(app){
 	var controller = function($scope){
-		$scope.sendMessage = function(e){
+		$scope.sendMessage = function(){
 			// e.preventDefault();
 		};
 	};

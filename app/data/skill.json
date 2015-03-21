@@ -25,7 +25,6 @@
 	"code": {
 		"labels": ["HTML", "CSS", "Javascript", "Testing", "Git"],
 		"datasets": [{
-			"label": "My Second dataset",
 			"fillColor": "rgba(160,212,104,0.2)",
 			"strokeColor": "#a0d468",
 			"pointColor": "#8cc152",

@@ -13,7 +13,6 @@ define(['app', 'chartjs'], function(app, Chart) {
 			scaleGridLineColor: 'rgba(255,255,255,0.05)',
 			scaleShowVerticalLines: false,
 			barStrokeWidth: 0
-
 		};
 	};
 
