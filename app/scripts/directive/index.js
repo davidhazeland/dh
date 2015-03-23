@@ -5,7 +5,7 @@
 define([
 	'./header', 
 	'./footer', 
-	'./info',
+	'./avatar',
 	'./gallery',
 	'./skill',
 	'./project',
@@ -16,7 +16,8 @@ define([
 	'./code-chart', 
 	'./js-chart', 
 	'./timeline',
-	'./about'
+	'./about',
+	'./info'
 	], 
 function(){
 
