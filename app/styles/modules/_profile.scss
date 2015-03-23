@@ -1,0 +1,9 @@
+.profile {
+	.profile--item {
+		line-height: em(36px, 18px);
+		span {
+			vertical-align: sub;
+			margin-right: 15px;
+		}
+	}
+}
