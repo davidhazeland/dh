@@ -1,0 +1,16 @@
+<section id="timeline" ng-controller="TimelineCtrl">
+  <div class="container cd-container">
+    <div class="cd-timeline-block" ng-repeat="item in items">
+      <div class="cd-timeline-img cd-{{item.type | name}} is-hidden">
+        <img ng-src="images/timeline/cd-icon-{{item.type | name}}.svg" alt="{{item.type}}">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content is-hidden">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <img class="cd-img" ng-src="{{item.image}}">
+        <span class="cd-date">{{item.date}}</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+  </div> <!-- cd-timeline -->
+</section>

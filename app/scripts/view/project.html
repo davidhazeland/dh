@@ -1,0 +1,11 @@
+<section id="project" ng-controller="ProjectCtrl">
+    <div class="container">
+      <h2 class="heading heading--project">PROJECT</h2>
+      <p class="sub-heading sub-heading--project">A bunch of things that I've done so far</p>
+      <ul class="showcase">
+        <li class="showcase__item" ng-repeat="project in projects">
+          <a href="{{project.link}}"><img class="showcase__item" ng-src="{{project.image}}"></a>
+        </li>
+      </ul>
+    </div>
+</section>
