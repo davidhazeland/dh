@@ -9,13 +9,14 @@ define(['app'], function(app){
 		};
 
 		return {
-			templateUrl: 'scripts/view/base.html',
+			templateUrl: 'scripts/view/skill.html',
 			restrict: 'E',
-			link: linkFn
+			link: linkFn,
+			replace: true
 		};
 	};
 
-	app.directive('app', directive);
+	app.directive('skill', directive);
 
 	return directive;
 });
