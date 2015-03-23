@@ -3,7 +3,8 @@
 /* global define */
 
 define([
-	'./name'
+	'./name',
+	'./link'
 	], 
 function(){
 
