@@ -1,0 +1,66 @@
+[
+{
+	"title": "Freelancer",
+	"description": "Front-end Web Developer",
+	"date": "Feb 14, 2015",
+	"type": "Coding",
+	"image": "images/timeline/workspace.jpg"
+},
+{
+	"title": "Work at Mimob",
+	"description": "Window Phone Developer",
+	"date": "Aug 1, 2014",
+	"type": "Work"
+},
+{
+	"title": "Work at Mimas",
+	"description": "Front-end Web Developer",
+	"date": "Sep 2, 2013",
+	"type": "Work",
+	"image": "images/timeline/mimas.jpg"
+},
+{
+	"title": "First Job",
+	"description": "Start-up with friends",
+	"date": "Feb 14, 2013",
+	"type": "Coding"
+},
+{
+	"title": "Go to College",
+	"description": "Hanoi University of Science and Technology",
+	"date": "Sep 5, 2012",
+	"type": "Education"
+},
+{
+	"title": "18 Years Old",
+	"date": "Jul 13, 2012",
+	"type": "Birthday",
+	"image": "images/timeline/birthday.jpg"
+},
+{
+	"title": "High School Graduation",
+	"description": "Son La Specialized High School",
+	"date": "May 30, 2012",
+	"type": "Education",
+	"image": "images/timeline/a2.jpg"
+},
+{
+	"title": "First Computer Program",
+	"description": "Hello World!",
+	"date": "Aug 5, 2010",
+	"type": "Coding"
+},
+{
+	"title": "Go to School",
+	"description": "Co Noi Primary School",
+	"date": "Sep 5, 2000",
+	"type": "Education",
+	"image": "images/timeline/school.jpg"
+},
+{
+	"title": "Born",
+	"description": "Mai Son, Son La",
+	"date": "Jul 13, 1993",
+	"type": "Location",
+	"image": "images/timeline/home.jpg"
+}]

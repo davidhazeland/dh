@@ -66,6 +66,11 @@
 	@include heading-color($white, $pink-rose--tint);	
 }
 
+.heading--about {
+	padding-top: 0;
+	@include heading-color($dark-gray--tint, $grass--tint);	
+}
+
 .sub-heading {
 	font-weight: $font-weight--normal;
 	font-size: em(16px);

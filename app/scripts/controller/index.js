@@ -2,7 +2,14 @@
 
 /* global define */
 
-define(['./header', './info', './gallery', './skill', './project', './contact-form'], 
+define([
+	'./header', 
+	'./info', 
+	'./gallery', 
+	'./skill', 
+	'./project', 
+	'./contact-form', 
+	'./timeline'], 
 function(){
 	
 });

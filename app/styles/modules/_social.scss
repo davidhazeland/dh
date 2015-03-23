@@ -9,8 +9,7 @@
 		margin: 5px 10px;
 		display: inline-block;
 		@include mq(large) {
-			margin: 5px;
+			margin-right: 0;
 		}
 	}
-
 }
