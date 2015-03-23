@@ -90,6 +90,7 @@ gulp.task('serve', ['styles', 'fonts'], function () {
   // watch for changes
   gulp.watch([
     'app/**/*.html',
+    'app/**/*.json',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
