@@ -1,3 +1,25 @@
-<section id="info">
-	
+<section id="info" ng-controller="InfoCtrl">
+	<h1 class="heading heading--about is-expanded-desktop">INFOMATION</h1>
+	<div class="container info">
+		<p class="info__item">
+			<a href="mailto:{{info.email}}" title="Email Now!" class="email-icon"></a>
+			<span>{{info.email}}</span>
+		</p>
+		<p class="info__item">
+			<a href="{{info.facebook}}" class="facebook-icon"></a>
+			<span>{{info.facebook | link}}</span>
+		</p>
+		<p class="info__item">
+			<a href="{{info.twitter}}" class="twitter-icon"></a>
+			<span>{{info.twitter | link}}</span>
+		</p>
+		<p class="info__item">
+			<a href="{{info.linkedin}}" class="linkedin-icon"></a>
+			<span>{{info.linkedin | link}}</span>
+		</p>
+		<p class="info__item">
+			<a href="tel:{{info.mobile}}" title="Call Me!" class="mobile-icon"></a>
+			<span>{{info.mobile}}</span>
+		</p>
+	</div>
 </section>

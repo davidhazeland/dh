@@ -35,6 +35,14 @@ Icon
 	@include is-pointer();
 }
 
+$social : (email, facebook, gooogle, twitter, linkedin, mobile);
+
+@each $item in $social {
+	.#{$item}-icon {
+		@include img-replace("contact/#{$item}.svg", 42px, 42px, inline-block);
+	}
+}
+
 /**********************
 Social
 **********************/
