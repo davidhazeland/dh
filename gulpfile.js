@@ -140,6 +140,17 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
+var amdOptimize = require("amd-optimize");
+var concat = require('gulp-concat');
+
+var requirejsOptimize = require('gulp-requirejs-optimize');
+ 
+gulp.task('scripts', function () {
+    return gulp.src('app/scripts/main.js')
+        .pipe(requirejsOptimize())
+        .pipe(gulp.dest('dist/scripts'));
+});
+
 gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });

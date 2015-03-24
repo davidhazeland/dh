@@ -7,7 +7,7 @@ define(['app'], function(app){
 		return function(input){
 			var out = input.replace(/http[s]?:\/\//, '');
 			return out;
-		}
+		};
 	};
 
 	app.filter('link', filter);

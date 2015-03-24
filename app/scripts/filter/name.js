@@ -8,7 +8,7 @@ define(['app'], function(app){
 			var out = input.replace(' ', '-');
 			out = out.toLowerCase();
 			return out;
-		}
+		};
 	};
 
 	app.filter('name', filter);
