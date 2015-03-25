@@ -2,9 +2,10 @@
 
 /* global define */
 
-define(['app'], function(app){
+define(['app'], function(app) {
 	var filter = function() {
-		return function(input){
+		return function(input) {
+			if (!input) {return;}
 			var out = input.replace(/http[s]?:\/\//, '');
 			return out;
 		};

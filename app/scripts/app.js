@@ -2,7 +2,7 @@
 
 /* global define */
 
-define(['angular'], function(angular){
+define(['angularjs'], function(angular){
 	var app = angular.module('portfolio', []);
 
 	return app;
