@@ -3,7 +3,7 @@
 /* global define */
 
 define(['app'], function(app){
-	var factory = function($http) {
+	var factory = ['$http', function($http) {
 		var url = 'data/projects.json';
 
 		return {
@@ -11,7 +11,7 @@ define(['app'], function(app){
 				return $http.get(url);
 			}
 		};
-	};
+	}];
 
 	app.factory('Project', factory);
 
