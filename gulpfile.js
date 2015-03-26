@@ -2,7 +2,9 @@
 'use strict';
 // generated on 2015-03-16 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')({
+  pattern: ['gulp-*', 'gulp.*', 'amd-*']
+});
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
@@ -28,7 +30,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('jshint', function() {
-  return gulp.src('app/scripts/**/*.js')
+  return gulp.src(['app/scripts/**/*.js', '!app/scripts/templates.js'])
     .pipe(reload({
       stream: true,
       once: true
@@ -37,6 +39,14 @@ gulp.task('jshint', function() {
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
 });
+
+/*********************
+
+HTML Contaction
+
+*********************/
+
+var htmlreplace = require('gulp-html-replace');
 
 gulp.task('html', ['styles'], function() {
   var assets = $.useref.assets({
@@ -69,6 +79,23 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/images'));
 });
 
+/*********************
+
+Angular Template
+
+*********************/
+
+gulp.task('templates', function () {
+    gulp.src('app/scripts/view/**/*.html')
+        .pipe($.angularTemplatecache({
+          root: 'scripts/view/',
+          module: 'portfolio',
+          standAlone: false
+        }))
+        .pipe(gulp.dest('app/scripts/'));
+});
+
+
 gulp.task('fonts', function() {
   return gulp.src(require('main-bower-files')({
       filter: '**/*.{eot,svg,ttf,woff,woff2}'
@@ -88,7 +115,7 @@ gulp.task('extras', function() {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts'], function() {
+gulp.task('serve', ['styles', 'fonts', 'templates'], function() {
   browserSync({
     notify: false,
     port: 9000,
@@ -112,6 +139,7 @@ gulp.task('serve', ['styles', 'fonts'], function() {
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
+  gulp.watch('app/scripts/view/**/*.html', ['templates']);
 });
 
 gulp.task('test', function() {
@@ -159,16 +187,13 @@ Requirejs optimizer
 
 *********************/
 
-var amdOptimize = require("amd-optimize");
-var concat = require('gulp-concat');
-
-gulp.task('scripts', function() {
+gulp.task('scripts', ['templates'], function() {
   return gulp.src(['app/scripts/**/*.js', 'bower_components/**/*.js'], { base: 'app/scripts' })
-    .pipe(amdOptimize('main', {
+    .pipe($.amdOptimize('main', {
       configFile: 'app/scripts/config.js',
       findNestedDependencies: true
     }))
-    .pipe(concat('main.js'))
+    .pipe($.concat('main.js'))
     .pipe($.uglify())
     .pipe(gulp.dest('dist/scripts'));
 });
@@ -179,7 +204,7 @@ Build
 
 *********************/
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function() {
+gulp.task('build', ['jshint', 'html', 'scripts', 'images', 'fonts', 'extras'], function() {
   return gulp.src('dist/**/*').pipe($.size({
     title: 'build',
     gzip: true

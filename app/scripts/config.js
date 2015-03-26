@@ -13,6 +13,9 @@ require.config({
         },
         owlCarousel : {
             deps: ['jquery']
+        },
+        templates : {
+            deps: ['app']
         }
     },
     paths: {
