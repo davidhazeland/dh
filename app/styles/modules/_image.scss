@@ -1,8 +1,15 @@
 .ava {
+	width: 215px;
+	height: 215px;
 	border-radius: 50% 50%;
 	border: em(4px) solid #fff;
+	background-color: #fff;
+	background-size: cover;
+	@include mq(medium) {
+		width: 300px;
+		height: 300px;
+	}
 	@include mq(large) {
-		//border-radius: 0;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 	}
 }

@@ -2,10 +2,10 @@
 
 /* global define */
 
-define(['app'], function(app){
+define(['app', 'jquery'], function(app, $){
 	var directive = function(){
 		var linkFn = function(scope, element) {
-			element
+			$(element)
 				.find('a:contains("' + scope.tab + '")')
 				.parent()
 				.addClass('nav__item--current');

@@ -6,7 +6,10 @@
 			display: block;
 			font-size: em(18px);
 			line-height: em(36px, 18px);
-			padding-left: 5%;
+			a {
+				padding-left: 5%;
+				display: block;
+			}
 			@include is-pointer();
 			&:active {
 				background-color: $dark-gray--tint;

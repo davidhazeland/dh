@@ -5,7 +5,7 @@
 			"highlight": "#a0d468",
 			"label": "Web"
 		}, {
-			"value": 78,
+			"value": 80,
 			"color": "#da4453",
 			"highlight": "#ed5565",
 			"label": "Mobile"
@@ -15,7 +15,7 @@
 			"highlight": "#5d9cec",
 			"label": "Design"
 		}, {
-			"value": 81,
+			"value": 84,
 			"color": "#f6bb42",
 			"highlight": "#ffce54",
 			"label": "Business"
@@ -23,7 +23,7 @@
 
 	],
 	"code": {
-		"labels": ["HTML", "CSS", "Javascript", "Testing", "Git"],
+		"labels": ["HTML", "CSS", "Javascript", "Gulp", "Git"],
 		"datasets": [{
 			"fillColor": "rgba(160,212,104,0.2)",
 			"strokeColor": "#a0d468",
@@ -31,7 +31,7 @@
 			"pointStrokeColor": "#fff",
 			"pointHighlightFill": "#fff",
 			"pointHighlightStroke": "rgba(151,187,205,1)",
-			"data": [88, 84, 97, 80, 84]
+			"data": [90, 89, 97, 81, 85]
 		}]
 	},
 	"js": {
@@ -41,7 +41,7 @@
 			"strokeColor": "#fff",
 			"highlightFill": "#ac92ec",
 			"highlightStroke": "rgba(220,220,220,1)",
-			"data": [88, 97, 90, 92, 96]
+			"data": [90, 97, 93, 92, 96]
 		}]
 	}
 }

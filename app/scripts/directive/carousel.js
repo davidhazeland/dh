@@ -7,10 +7,18 @@ define(['app', 'jquery', 'owlCarousel'], function(app, $){
 		
 		var linkFn = function(scope, element) {
 			function initCarousel() {
-				var owl = element.find('.owl-carousel');
+				var items = scope.items,
+					owl = $(element).find('.owl-carousel'),
+					lazyOwl = owl.find('.lazyOwl');
+
+				for (var i = 0; i < lazyOwl.length; i++) {
+					$(lazyOwl[i]).attr('data-src', items[i].image);
+				}
+
 				$(owl).owlCarousel({
 					autoPlay: 3000, //Set AutoPlay to 3 seconds
-					items: 3
+					items: 3,
+					lazyLoad : true
 				});	
 			}
 
