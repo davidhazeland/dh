@@ -1,0 +1,25 @@
+.is-collapsed-desktop {
+	@include mq(large) {
+		@include is-collapsed;
+	}
+}
+
+.is-expanded-desktop {
+	@include mq(small) {
+		@include is-collapsed;
+	}
+
+	@include mq(medium) {
+		@include is-collapsed;
+	}
+}
+
+.is-expanded-mobile {
+	@include mq(medium) {
+		@include is-collapsed;
+	}
+
+	@include mq(large) {
+		@include is-collapsed;
+	}
+}

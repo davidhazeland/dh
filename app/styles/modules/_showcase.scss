@@ -1,0 +1,25 @@
+.showcase {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	&__item {
+		img {
+			width: 100%;
+		}
+	}
+	@include mq(large) {
+		margin: 30px auto;
+		text-align: center;
+		&__item {
+			display: inline-block;
+			width: 31%;
+			margin-right: 3.5%;
+			img {
+				width: 100%;
+			}
+			&:last-child {
+				margin-right: 0%;
+			}
+		}
+	}
+}

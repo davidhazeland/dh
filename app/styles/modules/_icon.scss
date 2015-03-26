@@ -1,0 +1,69 @@
+/**********************
+Logo
+**********************/
+
+.logo {
+	@include img-replace("logo.svg", 48px, 36px, inline-block);
+	@include mq(large) {
+		@include img-replace("logo.svg", 64px, 48px, inline-block);
+		float: left;
+	}
+}
+
+/**********************
+Icon
+**********************/
+
+.college-icon {
+	@include img-replace("college.svg", 32px, 32px, inline-block);
+}
+
+.location-icon {
+	@include img-replace("location.svg", 32px, 32px, inline-block);
+}
+
+.birthday-icon {
+	@include img-replace("birthday.svg", 32px, 32px, inline-block);
+}
+
+.heart-icon {
+	@include img-replace("heart.svg", 32px, 27px, inline-block);
+}
+
+.list-icon {
+	@include img-replace("list-menu.svg", 48px, 24px, inline-block);
+	@include is-pointer();
+}
+
+$social : (email, facebook, gooogle, twitter, linkedin, mobile);
+
+@each $item in $social {
+	.#{$item}-icon {
+		@include img-replace("contact/#{$item}.svg", 42px, 42px, inline-block);
+	}
+}
+
+/**********************
+Social
+**********************/
+
+.social__item--facebook {
+	@include img-replace("fb.svg", 48px, 48px, inline-block);
+	@include mq(large) {
+		@include img-replace("fb.svg", 42px, 42px, inline-block);
+	}
+}
+
+.social__item--twitter {
+	@include img-replace("tw.svg", 48px, 48px, inline-block);
+	@include mq(large) {
+		@include img-replace("tw.svg", 42px, 42px, inline-block);
+	}
+}
+
+.social__item--linkedin {
+	@include img-replace("in.svg", 48px, 48px, inline-block);
+	@include mq(large) {
+		@include img-replace("in.svg", 42px, 42px, inline-block);
+	}
+}

@@ -1,0 +1,24 @@
+footer {
+	height: 140px;
+	background-color: $dark-gray--shade;
+	p {
+		margin: 0;
+		color: $white;
+		font-size: em(14px);
+		line-height: em(21px, 14px);
+		text-align: center;
+		span {
+			font-weight: $font-weight--bold;
+		}
+	}
+	@include mq(large) {
+		height: 100px;
+		ul {
+			float: right;
+		}
+		p {
+			float: left;
+			margin-top: 40px;
+		}
+	}
+}

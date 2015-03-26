@@ -1,0 +1,8 @@
+#info {
+	margin-bottom: 40px;
+	.container {
+		@include mq(large) {
+			padding: 10px 0;
+		}
+	}
+}

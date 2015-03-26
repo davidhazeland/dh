@@ -1,0 +1,15 @@
+.social {
+	margin: 0 auto;
+	padding: 20px 0;
+	list-style: none;
+	text-align: center;
+	&__item {
+		width: 48px;
+		height: 48px;
+		margin: 5px 10px;
+		display: inline-block;
+		@include mq(large) {
+			margin-right: 0;
+		}
+	}
+}

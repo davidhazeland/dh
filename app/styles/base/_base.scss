@@ -1,0 +1,39 @@
+html {
+	height: 100%;
+	color: $dark-gray--tint;
+	font-family: $font-family--primary;
+	font-size: em($base__font-size);
+	line-height: em($base__line-height, $base__font-size);
+}
+
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+::-webkit-input-placeholder {
+   color: $dark-gray--tint;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $dark-gray--tint;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $dark-gray--tint;  
+}
+
+:-ms-input-placeholder {  
+   color: $dark-gray--tint;  
+}

@@ -1,0 +1,92 @@
+.name {
+	color: $grass--shade;
+	font-family: $font-family--secondary;
+	font-size: em(24px);
+	line-height: em(36px, 24px);
+	@include mq(large) {
+		font-size: em(32px);
+		line-height: em(48px, 32px);
+		color: $white;
+	}
+}
+
+.job {
+	color: $dark-gray--tint;
+	font-size: em(16px);
+	line-height: em(24px, 16px);
+	@include mq(large) {
+		font-size: em(18px);
+		line-height: em(27px, 18px);
+	}
+}
+
+.quote {
+	float: left;
+	text-align: center;
+	width: 100%;
+	font-size: em(32px);
+	line-height: em(48px, 32px);
+	color: $grass--shade;
+	margin: 50px 0;
+	display: none;
+}
+
+.heading {
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--normal;
+	font-size: em(24px);
+	line-height: em(48px, 24px);
+	text-align: center;
+	margin: 0;
+	padding-top: 15px;
+	&:after {
+		content: '';
+		height: 4px;
+		width: 40px;
+		display: block;
+		position: relative;
+		left: 50%;
+		margin-left: -20px;
+	}
+	@include mq(large) {
+		font-size: em(24px);
+		line-height: em(48px, 24px);
+	}
+}
+
+.heading--skill {
+	@include heading-color($white, $sunflower--tint);
+}
+
+.heading--project {
+	@include heading-color($dark-gray--tint, $grass--tint);	
+}
+
+.heading--contact {
+	@include heading-color($white, $pink-rose--tint);	
+}
+
+.heading--about {
+	padding-top: 0;
+	@include heading-color($dark-gray--tint, $grass--tint);	
+}
+
+.sub-heading {
+	font-weight: $font-weight--normal;
+	font-size: em(16px);
+	line-height: em(36px, 16px);
+	padding-top: 10px;
+	text-align: center;
+}
+
+.sub-heading--skill {
+	color: $white;
+}
+
+.sub-heading--project {
+	
+}
+
+.sub-heading--contact {
+	color: $white;	
+}
