@@ -1,21 +1,18 @@
 #avatar {
 	text-align: center;
 	padding-bottom: 30px;
-	img {
-		width: 50%;
+	span {
 		margin-top: -100px;
 		margin-bottom: em(5px);
+		display: inline-block;
 	}
 	p {
 		margin: em(10px) 0;
 	}
 	@include mq(large) {
-		height: 100px;
 		margin: -75px auto 0;
 		text-align: left;
-		img {
-			width: 215px;
-			height: 215px;
+		span {
 			float: left;
 			margin-right: 15px;
 		}
