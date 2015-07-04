@@ -6,8 +6,8 @@ define(['app', 'jquery'], function(app, $) {
 	var directive = function() {
 		var linkFn = function(scope, element) {
 			function initScroll() {
-				var $timelineBlock = element.find('.cd-timeline-block');
-
+				var $timelineBlock = $(element).find('.cd-timeline-block');
+				
 				//hide timeline blocks which are outside the viewport
 				// $timelineBlock.each(function() {
 				// 	if ($(this).offset().top > $(window).scrollTop() + $(window).height() * 0.75) {
