@@ -2,13 +2,21 @@
   "name": "dh",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "requirejs": "~2.1.16",
+=======
+>>>>>>> 8025107e7862a82b40d91e6aeeaaca57c0d90fba
     "jquery": "~2.1.1",
     "modernizr": "~2.8.1",
     "angular": "~1.3.14",
+    "requirejs": "~2.1.16",
     "chartjs": "~1.0.2",
     "owl-carousel": "~1.3.2"
   },
   "devDependencies": {
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8025107e7862a82b40d91e6aeeaaca57c0d90fba
   }
 }
