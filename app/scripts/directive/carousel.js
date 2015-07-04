@@ -10,7 +10,6 @@ define(['app', 'jquery', 'owlCarousel'], function(app, $){
 				var items = scope.items,
 					owl = $(element).find('.owl-carousel'),
 					lazyOwl = owl.find('.lazyOwl');
-
 				for (var i = 0; i < lazyOwl.length; i++) {
 					$(lazyOwl[i]).attr('data-src', items[i].image);
 				}
