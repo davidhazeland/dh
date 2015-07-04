@@ -23,7 +23,7 @@
 
 	],
 	"code": {
-		"labels": ["HTML", "CSS", "Javascript", "Gulp", "Git"],
+		"labels": ["HTML", "CSS", "Javascript", "Gulp & Grunt", "VCS"],
 		"datasets": [{
 			"fillColor": "rgba(160,212,104,0.2)",
 			"strokeColor": "#a0d468",
@@ -35,13 +35,13 @@
 		}]
 	},
 	"js": {
-		"labels": ["Jquery", "RequireJS", "Angular", "Backbone", "EaselJS"],
+		"labels": ["Jquery", "Webpack", "Angular", "EaselJS", "React"],
 		"datasets": [{
 			"fillColor": "#967adc",
 			"strokeColor": "#fff",
 			"highlightFill": "#ac92ec",
 			"highlightStroke": "rgba(220,220,220,1)",
-			"data": [90, 97, 93, 92, 96]
+			"data": [90, 95, 93, 92, 96]
 		}]
 	}
 }
