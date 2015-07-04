@@ -1,5 +1,18 @@
 [
 {
+	"title": "Move to Ho Chi Minh",
+	"date": "Jul 1, 2015",
+	"type": "Location",
+	"image": "images/timeline/sg.jpg"
+},
+{
+	"title": "Work at MBear",
+	"description": "Front-end Web Developer",
+	"date": "May 1, 2015",
+	"type": "Coding",
+	"image": "images/timeline/mac.jpg"
+},
+{
 	"title": "Freelancer",
 	"description": "Front-end Web Developer",
 	"date": "Feb 14, 2015",
