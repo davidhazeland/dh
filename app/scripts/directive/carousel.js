@@ -4,7 +4,7 @@
 
 define(['app', 'jquery', 'owlCarousel'], function(app, $){
 	var directive = function(){
-		
+
 		var linkFn = function(scope, element) {
 			function initCarousel() {
 				var items = scope.items,
@@ -18,7 +18,7 @@ define(['app', 'jquery', 'owlCarousel'], function(app, $){
 					autoPlay: 3000, //Set AutoPlay to 3 seconds
 					items: 3,
 					lazyLoad : true
-				});	
+				});
 			}
 
 			scope.$watch('items', function() {
