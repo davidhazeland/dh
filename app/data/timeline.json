@@ -41,26 +41,26 @@
 {
 	"title": "Go to College",
 	"description": "Hanoi University of Science and Technology",
-	"date": "Sep 5, 2012",
+	"date": "Sep 5, 2011",
 	"type": "Education"
 },
 {
 	"title": "18 Years Old",
-	"date": "Jul 13, 2012",
+	"date": "Jul 13, 2011",
 	"type": "Birthday",
 	"image": "images/timeline/birthday.jpg"
 },
 {
 	"title": "High School Graduation",
 	"description": "Son La Specialized High School",
-	"date": "May 30, 2012",
+	"date": "May 30, 2011",
 	"type": "Education",
 	"image": "images/timeline/a2.jpg"
 },
 {
 	"title": "First Computer Program",
 	"description": "Hello World!",
-	"date": "Aug 5, 2010",
+	"date": "Aug 5, 2009",
 	"type": "Coding"
 },
 {
