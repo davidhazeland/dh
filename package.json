@@ -3,6 +3,9 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "test": "gulp test"
+    },
   "devDependencies": {
     "amd-optimize": "^0.4.3",
     "autoprefixer-core": "^4.0.2",
